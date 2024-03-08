@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+.feed-student {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: none;
+
+
+  .feed-header {
+    padding: 0;
+    margin-bottom: 20px;
+    background-color: #3a4f24;
+    //border-bottom: 1px solid #a5a5a5;
+    width: 500%;
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      font-family: "Raleway", sans-serif;
+      font-size: 15px;
+      padding: 10px;
+      margin-left: 10px;
+      margin-top: 10px;
+      color: #ffffff;
+      font-style: italic;
+      font-weight: 500;
+    }
+    span {
+      font-family: "Raleway", sans-serif;
+      font-style: normal;
+      color: #dbbc2c;
+    }
+  }
+
+  .feed-student-body {
+    display: flex;
+    padding: 3% 8% 2% 8%;
+    justify-content: center;
+    align-items: center;
+    border: none;
+   
+  }
+  .feed-lang {
+    width: 90%;
+  }
+
+  .feed-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: e0ffbf3f;
+
+    transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .header-announcement {
+      width: 90%;
+      margin-top: 20px;
+      text-align: left;
+      padding: 1px;
+      display: flex;
+
+      h1 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 15px;
+        margin-top: 30px;
+      }
+      .header-time {
+        h6 {
+          margin-top: 60px;
+          font-size: 10px;
+          font-family: "Raleway", sans-serif;
+          text-align: left;
+          display: flex;
+        }
+      }
+    }
+
+    .professor {
+      width: 90%;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px;
+    }
+
+    .announce {
+      width: 90%;
+      margin: 10px;
+      padding: 5px;
+      border-radius: 10px;
+      p {
+        margin: 10px;
+        font-weight: 300;
+      }
+    }
+
+    .date-time {
+      position: absolute;
+      font-weight: 500px;
+      left: 1100px;
+      top: 50px;
+    }
+  }
+  .feed-content:hover {
+    background-color: #fafafa;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+}

@@ -1,0 +1,301 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.prof-main-con {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(58, 79, 36, 1) 100%
+  );
+  width: 100%;
+  height: 100%;
+  padding: 4% 0% 0% 0%;
+}
+
+.profile-container {
+  padding: 2% 3% 3% 2%;
+
+  .first-col {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+      font-size: 23px;
+      font-family: "Raleway";
+      font-weight: regular;
+    }
+    h2 {
+      font-size: 18px;
+      font-family: "Raleway";
+      font-weight: 300;
+    }
+    h3 {
+      font-size: 15px;
+      font-family: "Raleway";
+      font-weight: regular;
+    }
+
+    .one {
+      height: 500px;
+      place-self: center;
+      place-content: center;
+      place-items: center;
+      margin-bottom: 2%;
+      background-color: rgb(255, 255, 255);
+
+      .profile-img {
+        height: 130px;
+        width: 130px;
+        border-radius: 100%;
+        margin-bottom: 5%;
+      }
+
+      h1 {
+        margin-bottom: 1%;
+      }
+      h2 {
+        margin-bottom: 10%;
+      }
+    }
+
+    .sub-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2%;
+
+      .two {
+        height: 60px;
+        width: 310px;
+        padding: 2%;
+        margin-right: 10px;
+        background-color: rgb(255, 255, 255);
+
+        div {
+          display: flex;
+          align-items: center;
+
+          h1 {
+            margin-right: 10px;
+          }
+          h2 {
+            margin-top: 6px;
+          }
+        }
+      }
+
+      .three {
+        height: 60px;
+        width: 310px;
+        padding: 2%;
+        background-color: rgb(255, 255, 255);
+
+        div {
+          display: flex;
+          align-items: center;
+
+          h1 {
+            margin-right: 10px;
+          }
+          h2 {
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+
+    .four {
+      height: 150px;
+      padding: 2%;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 2%;
+
+      .f1 {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          margin-right: 10px;
+        }
+        h2 {
+          margin-top: 5px;
+        }
+      }
+
+      .f2 {
+        display: flex;
+        align-items: center;
+
+        h1 {
+          margin-right: 10px;
+        }
+        h2 {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  // SECOND COLUMN
+  .second-col {
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+      font-size: 20px;
+      font-family: "Raleway";
+      font-weight: regular;
+    }
+    h2 {
+      font-size: 15px;
+      font-family: "Raleway";
+      font-weight: 300;
+      margin-top: 7px;
+    }
+
+    .five {
+      height: 735px;
+      padding: 2%;
+      background-color: rgb(255, 255, 255);
+
+      .title {
+        text-align: center;
+        font-weight: 500;
+      }
+
+      //   FIRST/LAST name LABELS
+      .first-last {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+
+        .fname {
+          width: 350px;
+        }
+
+        .lname {
+          width: 350px;
+        }
+      }
+
+      //   FIRST/LAST name CONTENTS
+      .six-sev-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3%;
+
+        .six {
+          width: 315px;
+          height: 47px;
+          margin-right: 10px;
+          padding: 1%;
+          background-color: rgb(246, 246, 246);
+        }
+
+        .seven {
+          width: 315px;
+          height: 47px;
+          padding: 1%;
+          background-color: rgb(246, 246, 246);
+        }
+      }
+    }
+
+    // Middle name contents
+    .eight {
+      width: 315px;
+      height: 47px;
+      padding: 1%;
+      margin-bottom: 3%;
+      background-color: rgb(246, 246, 246);
+    }
+
+    .bd-cn {
+      display: flex;
+      justify-content: space-between;
+
+      .bd {
+        width: 350px;
+      }
+
+      .cn {
+        width: 350px;
+      }
+    }
+
+    .nine-ten-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3%;
+
+      .nine {
+        width: 315px;
+        height: 47px;
+        margin-right: 10px;
+        padding: 1%;
+        background-color: rgb(246, 246, 246);
+      }
+
+      .ten {
+        width: 315px;
+        height: 47px;
+        padding: 1%;
+        background-color: rgb(246, 246, 246);
+      }
+    }
+
+    .eleven {
+      width: 100%;
+      height: 47px;
+      padding: 1%;
+      margin-bottom: 3%;
+      background-color: rgb(246, 246, 246);
+    }
+
+    .twelve {
+      width: 100%;
+      height: 47px;
+      padding: 1%;
+      margin-bottom: 3%;
+      background-color: rgb(246, 246, 246);
+    }
+  }
+}
+
+// RESPONSIVENESS
+// for small devices (PHONES & TABLETS)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .prof-main-con {
+    .profile-container {
+      padding: 3%;
+    }
+  }
+}
+
+// for medium devices (TABLETS)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .prof-main-con {
+    .profile-container {
+      padding: 2% 6% 2% 6%;
+    }
+  }
+}
+
+// for large devices (LAPTOPS & DESKTOPS)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .prof-main-con {
+    .profile-container {
+      padding: 2% 6% 2% 6%;
+    }
+  }
+}
+
+// for extra large devices (Large DESKTOPS)
+@media (min-width: 1200px) {
+}

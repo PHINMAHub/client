@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: 0;
+  box-sizing: border-box;
+}
+
+.student-nav-tab {
+  .nav-link {
+    color: white;
+  }
+  .nav-link:hover {
+    color: #dbbc2c;
+  }
+  .nav-item {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    background-color: #3a4f24;
+  }
+}
+
+.main-holder {
+  padding: 5vh 15vh 5vh 15vh;
+  .accordion-item {
+    .accordion-button::after {
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+    }
+    button.accordion-button.collapsed {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0); /* Change to your desired color */
+    }
+    button.accordion-button {
+      background-color: #3a4f24;
+      color: rgb(255, 255, 255); /* Change to your desired color */
+      font-weight: 700;
+    }
+
+    button::after {
+      color: white;
+      padding: 10px;
+
+      border-radius: 30px;
+    }
+  }
+
+  h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h4 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 10px;
+  }
+  span {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: #696969;
+  }
+  p {
+    text-align: center;
+    display: flex;
+  }
+
+  .card-within {
+    margin: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    .date-posted {
+      color: green;
+    }
+    .date-due {
+      color: red;
+    }
+    .subject-code {
+      color: rgb(0, 0, 0);
+    }
+    button {
+      border: none;
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+    button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-holder {
+    padding: 5vh 5vh 5vh 5vh;
+  }
+}
+@media (min-width: 601px) and (max-width: 992px) {
+  .main-holder {
+    padding: 5vh 9vh 5vh 9vh;
+  }
+}
+@media (min-width: 993px) and (max-width: 1028px) {
+  .main-holder {
+    padding: 5vh 15vh 5vh 15vh;
+  }
+}
+@media (min-width: 1029px) and (max-width: 1223px) {
+  .main-holder {
+    padding: 5vh 20vh 5vh 20vh;
+  }
+}
+@media (min-width: 1224px) and (max-width: 1480px) {
+  .main-holder {
+    padding: 5vh 25vh 5vh 25vh;
+  }
+}
+@media (min-width: 1481px) and (max-width: 1992px) {
+  .main-holder {
+    padding: 5vh 30vh 5vh 30vh;
+  }
+}
