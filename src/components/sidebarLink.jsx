@@ -24,9 +24,12 @@ const SideBarLink = ({ direct, icon, title, isClicked }) => {
                 }
             }}
         >
-            <div className='image-container'>
+            {icon && (
+
+                <div className='image-container'>
                 <img className='sidebar-img' src={icon} alt={title} />
             </div>
+                )}
             <span className={`${isClicked ? 'show-block' : ''}`}>{title}</span>
             {isActive && <div className="indicator"></div>}
         </Link>
@@ -35,7 +38,7 @@ const SideBarLink = ({ direct, icon, title, isClicked }) => {
 
 SideBarLink.propTypes = {
     direct: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
+    icon: PropTypes.string,
     title: PropTypes.string.isRequired,
     isClicked: PropTypes.bool.isRequired,
 };

@@ -154,79 +154,92 @@ function Statistics() {
 
     fetchData();
   }, []);
-
+useEffect(() => {
+    console.log(radioValue)
+}, [radioValue])
   return (
     <div className="mainmain">
-      <div className="stat-header">
+         <div className="stat-header">
         <h1 className="user">
           Welcome to <span>Phinma Statistics</span>.
         </h1>
       </div>
-      <div className="card-main">
-        <Card.Body className="stat-card">
-          <div className="stat-three">
-            <Form.Select
-              className="course-select-stat"
-              onChange={handleClassChange}
-              aria-label="def"
-            >
-              <option className="op">Select a Subject & Block</option>
-              {classes.map((classObj) => (
-                <option className="op" value={classObj._id} key={classObj._id}>
-                  {`${classObj.subject.subjectCode}: ${classObj.block}`}
-                </option>
-              ))}
-            </Form.Select>
+    <div className="card-main">
+     
+      <Card.Body className="stat-card">
+        <div className="stat-three">
+          <Form.Select
+            className="course-select-stat"
+            onChange={handleClassChange}
+            aria-label="def"
+          >
+            <option className="op">Select a Subject & Block</option>
+            {classes.map((classObj) => (
+              <option className="op" value={classObj._id} key={classObj._id}>
+                {`${classObj.subject.subjectCode}: ${classObj.block}`}
+              </option>
+            ))}
+          </Form.Select>
 
-            <ButtonGroup className="bg-p">
-              {radios.map((radio, idx) => (
-                <ToggleButton
-                  className="toggle-p"
-                  key={idx}
-                  id={`radio-${idx}`}
-                  type="radio"
-                  variant={idx % 2 ? "light" : "light"}
-                  name="radio"
-                  value={radio.value}
-                  checked={radioValue === radio.value}
-                  onChange={(e) => setRadioValue(e.currentTarget.value)}
-                >
-                  {radio.name}
-                </ToggleButton>
-              ))}
-            </ButtonGroup>
-          </div>
-        </Card.Body>
-        <div className="statistics-table">
-          <table>
-            <thead>
-              <tr>
-                {Object.keys(data[0]).map((key, index) => (
+          <ButtonGroup className="bg-p">
+            {radios.map((radio, idx) => (
+              <ToggleButton
+                className="toggle-p"
+                key={idx}
+                id={`radio-${idx}`}
+                type="radio"
+                variant={idx % 2 ? "light" : "light"}
+                name="radio"
+                value={radio.value}
+                checked={radioValue === radio.value}
+                onChange={(e) => setRadioValue(e.currentTarget.value)}
+              >
+                {radio.name}
+              </ToggleButton>
+            ))}
+          </ButtonGroup>
+        </div>
+      </Card.Body>
+        {radioValue === "1" ? (
+      <div className="statistics-table">
+
+            <table>
+          <thead>
+            <tr>
+              {Object.keys(data[0]).map((key, index) => (
                   <th className="teehe" key={index}>
-                    {key}
-                  </th>
+                  {key}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((row, rowIndex) => (
+              <tr key={rowIndex}>
+                {Object.values(row).map((value, cellIndex) => (
+                  <td className="teede" key={cellIndex}>
+                    {value}
+                  </td>
                 ))}
               </tr>
-            </thead>
-            <tbody>
-              {data.map((row, rowIndex) => (
-                <tr key={rowIndex}>
-                  {Object.values(row).map((value, cellIndex) => (
-                    <td className="teede" key={cellIndex}>
-                      {value}
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="butt-con">
-            <button className="dldl" type="submit" onClick={handleDownload}>
-              <span className="dldldl">Download</span>
-            </button>
-          </div>
-        </div>
+            ))}
+          </tbody>
+        </table>
+        <button className="dldl" type="submit" onClick={handleDownload}>
+<span className="dldldl">Download</span>
+        </button>
       </div>
+            ): (
+                <div style={{width: "100%", height: "50vh", display: "grid", placeItems: "center", backgroundColor: "rgba(242, 255, 227, 0.773)",
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)",
+                marginTop: "50px",
+                borderRadius: "30px"}}>
+                    <p>
+                        No Information.
+                        </p>
+                     </div>
+            )}
+    </div>
     </div>
   );
 }

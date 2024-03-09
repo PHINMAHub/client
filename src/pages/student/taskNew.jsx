@@ -272,8 +272,8 @@ export default function NewTask() {
             </>
           ))}
         {classType.toLowerCase() === "connect" && pageData.postChoices && (
-          <Card className="pool-container">
-            <h4>Pool</h4>
+          <Card className="poll-container">
+            <h4 className="poll">Poll</h4>
 
             {submitted ? (
               <div className="choice-container">
